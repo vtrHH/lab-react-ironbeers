@@ -12,12 +12,6 @@ export class RandomBeer extends Component {
     this.loadSingleRandomBeer();
   }
 
-  componentDidUpdate(previousProps) {
-    if (previousProps.match.params.beerId !== this.props.match.params.beerId) {
-      this.loadSingleBeer();
-    }
-  }
-
   async loadSingleRandomBeer() {
     const random = await loadRandomBeer();
     this.setState({ beer: random });

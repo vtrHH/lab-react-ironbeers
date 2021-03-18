@@ -18,3 +18,5 @@ export const loadRandomBeer = async () => {
   );
   return response.data;
 };
+
+export const addBeer = async () => {};

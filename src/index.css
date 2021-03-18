@@ -29,3 +29,9 @@ a {
 .single-beer-image {
   max-height: 5em;
 }
+
+.new-beer-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
